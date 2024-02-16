@@ -1,42 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biodata siswa</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check Solana Address on Mainnet</title>
+<script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js"></script>
+<link rel="stylesheet" href="public/style.css">
+<script src="public/scripts.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Informasi data siswa</h1>
-    </header>
+    <nav class="navbar">
+        <ul class="nav-li">
+            <li><a href="#home">Home</a></li>
+            <li><a href="https://explorer.solana.com/" target="_blank">Explore Solana</a></li>
+            <li><a href="https://solana.com/docs" target="_blank">Solana Documentation</a></li>
+          </ul>
+    </nav>
     <main>
-        <form>
-            <fieldset>
-                <label for="name">Nama Lengkap : </label><br>
-                <input type="text" id="name" name="name" placeholder="Masukkan nama anda" /><br><br>
-                <label for="alamat">Alamat Lengkap :</label><br>
-                <textarea rows="4" cols="50" placeholder="Masukkan alamat lengkap anda" id="alamat"></textarea><br><br>
-                <label for="dob">Tanggal lahir :</label><br>
-                <input type="date" id="dob" name="dob" /><br><br>
-                <label>Jenis kelamin</label><br>
-                <label for="Laki-laki">Laki-laki</label>
-                <input type="radio" id="Laki-laki" name="jk" value="Laki-laki" /> 
-                <label for="Perempuan">Perempuan</label>
-                <input type="radio" id="Perempuan" name="jk" value="Perempuan" /><br><br>
-                <input type="submit" value="kirim">
-            </fieldset>
-        </form>
+        <div>
+            <h1>Check Solana Address on Mainnet</h1>
+            <p>Enter a Solana address to check if it exists on the mainnet:</p>
+            <input type="text" id="solanaAddress" placeholder="Enter Solana address">
+            <button onclick="checkAddress()">Check Address</button>
+            <p id="resultMessage"></p>
+            <p id="balanceMessage"></p>
+        </div>
     </main>
-    <br>
-    <br>
-    <section>
-        <fieldset>
-            <legend><strong>Contoh biodata siswa</strong></legend>
-            <label>Nama  lengkap : Rizky Alfarabi Putra</label><br>
-            <label>Alamat Lengkap: Jl. Apel  no.23 Cibadak Kota Tegal</label><br>
-            <label>Tanggal lahir : 25/8/2004</label><br>
-            <label>Jenis Kelamin : Laki - Laki</label><br>
-        </fieldset>
-    </section>
 </body>
 </html>
