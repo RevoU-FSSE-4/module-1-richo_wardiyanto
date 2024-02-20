@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Check Solana Address on Mainnet</title>
 <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js"></script>
-<link rel="stylesheet" href="public/style.css">
-<script src="public/scripts.js"></script>
+<link rel="stylesheet" href="style.css">
+<script src="scripts.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -14,23 +14,45 @@
             <li><a href="#home">Home</a></li>
             <li><a href="https://explorer.solana.com/" target="_blank">Explore Solana</a></li>
             <li><a href="https://solana.com/docs" target="_blank">Solana Documentation</a></li>
-            </ul>
+        </ul>
     </nav>
     <main>
-        <div>
-            <h1>Check Solana Address on Mainnet</h1>
-            <p>Enter a Solana address to check if it exists on the mainnet:</p>
-            <input type="text" id="solanaAddress" placeholder="Enter Solana address">
-            <button onclick="checkAddress()">Check Address</button>
-            <p id="resultMessage"></p>
-            <p id="balanceMessage"></p>
-            <img src="../assets/sol.gif" alt="sol-market" id="loadingImage" style="display: none;">
-        </div>
+        <section class="container-section-first">
+            <div>
+                <h1>Check Solana Address on Mainnet</h1>
+                <p>Enter a Solana address to check if it exists on the mainnet:</p>
+                <input type="text" id="solanaAddress" class="solana-address" placeholder="Enter Solana address">
+                <button onclick="checkAddress()">Check Address</button>
+                <p id="resultMessage"></p>
+                <p id="balanceMessage"></p>
+                <img src="../images/sol.gif" alt="sol-market" id="loadingImage" style="display: none;">
+            </div>
+        </section>
+        <section class="container-section-second">
+            <h1>Ecosystem Solana</h1>
+            <div class="card-container">
+                <div>
+                    <img src="../images/bonk.jpg" alt="Bonk">
+                </div>
+                <div>
+                    <img src="../images/pyth.jpg" alt="pyth">
+                </div>
+                <div>
+                </div>
+            </div>
+        </section>
+        <section class="container-section-third">
+            <div id="contact">
+                <h2>Contact Us</h2>
+                <input type="email" id="userEmail" class="name" placeholder="Your Email"><br>
+                <textarea id="message" class="name" placeholder="Message..."></textarea><br>
+                <label class="container-check" for="check">
+                    <input type="checkbox" id="check">I agree that the above details are correct
+                </label>
+                <p>If you have any questions or feedback, please contact us at <a href="mailto:you@example.com">you@example.com</a>.</p>
+                <button onclick="sendEmail()">Send Message</button>
+            </div>
+        </section>
     </main>
-    <footer>
-        <div>
-            
-        </div>
-    </footer>
 </body>
 </html>
