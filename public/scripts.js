@@ -1,6 +1,8 @@
 async function checkAddress() {
     var address = document.getElementById("solanaAddress").value.trim();
     var resultMessage = document.getElementById("resultMessage");
+    var loadingImage = document.getElementById("loadingImage");
+
 
     // Initialize a connection to the Solana mainnet
     const connection = new solanaWeb3.Connection(
@@ -20,6 +22,7 @@ async function checkAddress() {
             const balance = accountInfo.lamports / solanaWeb3.LAMPORTS_PER_SOL;
             balanceMessage.innerText = `Balance of ${balance} SOL`;
             resultMessage.innerText = "Solana address exists on the mainnet.";
+            loadingImage.style.display = "block";
 
         }
     } catch (error) {
