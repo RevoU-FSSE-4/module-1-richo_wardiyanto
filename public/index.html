@@ -17,14 +17,43 @@
           </ul>
     </nav>
     <main>
-        <div>
-            <h1>Check Solana Address on Mainnet</h1>
-            <p>Enter a Solana address to check if it exists on the mainnet:</p>
-            <input type="text" id="solanaAddress" placeholder="Enter Solana address">
-            <button onclick="checkAddress()">Check Address</button>
-            <p id="resultMessage"></p>
-            <p id="balanceMessage"></p>
-        </div>
+        <section class="container-section-first">
+            <div>
+                <h1>Check Solana Address on Mainnet</h1>
+                <p>Enter a Solana address to check if it exists on the mainnet:</p>
+                <input type="text" id="solanaAddress" class="solana-address" placeholder="Enter Solana address">
+                <button onclick="checkAddress()">Check Address</button>
+                <p id="resultMessage"></p>
+                <p id="balanceMessage"></p>
+            </div>
+        </section>
+        <section class="container-section-second">
+            <h1>Ecosystem Solana</h1>
+            <div class="card-container">
+                <div>
+                    <img src="../assets/bonk.jpg" alt="Bonk">
+                </div>
+                <div>
+                    <img src="../assets/pyth.jpg" alt="pyth">
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </section>
+        <section class="container-section-third">
+            <div id="contact">
+                <h2>Contact Us</h2>
+                <input type="email" id="userEmail" class="name" placeholder="Your Email"><br>
+                <textarea id="message" class="name" placeholder="Message..."></textarea><br>
+                <label class="container-check" for="check">
+                    <input type="checkbox" id="check">I agree that the above details are correct
+                </label>
+                <p>If you have any questions or feedback, please contact us at <a href="mailto:you@example.com">you@example.com</a>.</p>
+                <button onclick="sendEmail()">Send Message</button>
+            </div>
+        </section>
     </main>
+    
 </body>
 </html>

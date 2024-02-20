@@ -1,13 +1,16 @@
 body {
     margin: 0px;
 }
-main {
+
+    /* CSS for main section first */
+
+    .container-section-first {
     font-family: Arial, sans-serif;
     padding: 2rem;
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
-}
+    }
     .navbar {
         background-color: #333;
         overflow: hidden;
@@ -23,7 +26,7 @@ main {
     nav ul li {
         float: left;
     }
-  
+
     nav ul li a {
         display: block;
         color: white;
@@ -41,23 +44,21 @@ main {
     color: #333;
     margin-bottom: 1rem;
     }
-  
+
     p {
     font-size: 1.1rem;
     color: #333;
     margin-bottom: 2rem;
     }
-  
-    input {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 0.5rem;
-    font-size: 1rem;
-    width: 100%;
-    box-sizing: border-box;
-    margin-bottom: 1rem;
+    
+    .solana-address {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
     }
-  
+    
     button {
     background-color: #4CAF50;
     color: white;
@@ -68,13 +69,94 @@ main {
     cursor: pointer;
     transition: background-color 0.3s ease;
     }
-  
+
     button:hover{
     background-color: #3e8e41;
     }
-  
+
     #resultMessage, #balanceMessage{
     font-size: 1.1rem;
     color: #333;
     margin-top: 1rem;
+    }
+
+    /* CSS for main section second */
+
+    .container-section-second {
+        padding: 20px;
+    }
+    
+    .container-section-second h1 {
+        color: #333;
+    }
+    
+    .card-container {
+        display: flex;
+        flex-wrap: wrap; /* Allow cards to wrap to next line */
+        gap: 20px; /* Adjust the gap between images */
+    }
+    
+    .card-container div {
+        flex: 1; /* Each card takes up equal space */
+        max-width: 300px; /* Set maximum width for each card */
+    }
+    
+    .card-container img {
+        width: 100%;
+        border-radius: 8px; /* Add rounded corners to images */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        transition: transform 0.3s ease; /* Add smooth hover effect */
+    }
+    
+    .card-container img:hover {
+        transform: scale(1.05); /* Scale up image on hover */
+    }
+    
+
+    /* CSS for main section third */
+
+    .container-section-third {
+        background-color: #f0f0f0;
+        padding: 20px;
+    }
+    
+    #contact {
+        margin: 0 auto;
+        max-width: 600px;
+    }
+    
+    #contact h2 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+    
+    .name {
+        width: 80%;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .container-check {
+        margin-bottom: 20px;
+        display: block;
+    }
+    
+    .container-check input[type="checkbox"] {
+        margin-right: 5px;
+    }
+    
+    button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
     }
