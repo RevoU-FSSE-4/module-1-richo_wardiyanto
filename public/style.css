@@ -5,11 +5,11 @@ body {
     /* CSS for main section first */
 
     .container-section-first {
-    font-family: Arial, sans-serif;
-    padding: 2rem;
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
+        font-family: Arial, sans-serif;
+        padding: 2rem;
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
     }
     .navbar {
         background-color: #333;
@@ -40,15 +40,15 @@ body {
     }
 
     h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 1rem;
+        font-size: 2.5rem;
+        color: #333;
+        margin-bottom: 1rem;
     }
 
     p {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 2rem;
+        font-size: 1.1rem;
+        color: #333;
+        margin-bottom: 2rem;
     }
     
     .solana-address {
@@ -60,14 +60,14 @@ body {
     }
     
     button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
     }
 
     button:hover{
@@ -75,15 +75,17 @@ body {
     }
 
     #resultMessage, #balanceMessage{
-    font-size: 1.1rem;
-    color: #333;
-    margin-top: 1rem;
+        font-size: 1.1rem;
+        color: #333;
+        margin-top: 1rem;
     }
 
     /* CSS for main section second */
 
     .container-section-second {
-        padding: 20px;
+        font-family: Arial, sans-serif;
+        padding: 2rem;
+        margin: 0 auto;
     }
     
     .container-section-second h1 {
@@ -92,25 +94,38 @@ body {
     
     .card-container {
         display: flex;
-        flex-wrap: wrap; /* Allow cards to wrap to next line */
-        gap: 20px; /* Adjust the gap between images */
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
     }
     
-    .card-container div {
-        flex: 1; /* Each card takes up equal space */
-        max-width: 300px; /* Set maximum width for each card */
+    .card {
+        width: 220px;
+        background-color: #f0f0f0;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding-top: 10px;
+        transition: transform 0.3s ease;
+        text-align: center;
     }
     
-    .card-container img {
-        width: 100%;
-        border-radius: 8px; /* Add rounded corners to images */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-        transition: transform 0.3s ease; /* Add smooth hover effect */
+    .card img {
+        width: 80%;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
     }
     
-    .card-container img:hover {
-        transform: scale(1.05); /* Scale up image on hover */
+    .card-text {
+        padding: 2px; /* Remove padding */
+        margin: 5px;
+        justify-content: center;
     }
+
+    .card-text-p {
+        text-align: center;
+        
+    }
+    
     
 
     /* CSS for main section third */
