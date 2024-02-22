@@ -1,3 +1,23 @@
+// dark mode
+document.addEventListener("DOMContentLoaded", function() {
+    var body = document.body;
+    var toggleButton = document.getElementById("toggleButton");
+    
+    // Check if night mode preference is stored in local storage
+    var isDarkMode = localStorage.getItem("darkMode");
+    if (isDarkMode === "true") {
+        body.classList.add("dark-mode");
+    }
+
+    // Toggle night mode
+    toggleButton.addEventListener("click", function() {
+        body.classList.toggle("dark-mode");
+        var isDarkMode = body.classList.contains("dark-mode");
+        localStorage.setItem("darkMode", isDarkMode);
+    });
+});
+
+
 async function checkAddress() {
     var address = document.getElementById("solanaAddress").value.trim();
     var resultMessage = document.getElementById("resultMessage");
