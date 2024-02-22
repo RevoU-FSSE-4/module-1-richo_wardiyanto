@@ -131,6 +131,7 @@ body {
     /* CSS for main section third */
 
     .container-section-third {
+        font-family: Arial, sans-serif;
         background-color: #f0f0f0;
         padding: 20px;
     }
